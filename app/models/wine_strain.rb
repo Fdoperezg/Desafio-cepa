@@ -1,0 +1,2 @@
+class WineStrain < ApplicationRecord
+end
