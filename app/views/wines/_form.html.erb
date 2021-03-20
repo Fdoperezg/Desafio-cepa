@@ -27,6 +27,15 @@
     <% end %>
   </div>
 
+  <div id="wine_strains" class="form-group">
+    <%= form.fields_for :strain_wines do |strain_wine_form| %>
+    <%= render 'strains_fields', f: strain_wine_form %>
+    <% end %>
+    <div class="links form-inline">
+      <%= link_to_add_association 'add strain', form, :strain_wines %>
+    </div>
+  </div> 
+
   <div class="actions">
     <%= form.submit %>
   </div>
