@@ -1,0 +1,5 @@
+class AddColumnToStrains < ActiveRecord::Migration[5.2]
+  def change
+    add_column :strains, :available, :boolean
+  end
+end
